@@ -4,7 +4,7 @@ This project is a To-Do List, the user can add new tasks to the list and mark th
 
 ## Project Link
 
-**coming soon**
+**https://to-do-list-built-with-javascript.netlify.app/**
 
 ## Screenshot
 
