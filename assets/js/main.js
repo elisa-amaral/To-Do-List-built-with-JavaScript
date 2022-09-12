@@ -59,7 +59,7 @@ document.addEventListener('click', function(e) {
        /* 
     
         the recordTask() function is called above because after removing the task 
-        after clicking on "Mark as done",  the li of the task is deleted, so the 
+        after clicking on "Mark as Done",  the li of the task is deleted, so the 
         array of all tasks is re-recorded on localStorage without the deleted task
 
         */
