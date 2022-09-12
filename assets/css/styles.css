@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+:root 
+{
+  --primary-color: #d6cbc7;
+  --dark-primary-color: #a79690;
+  --darker-primary-color: #4e4541;
+  --orange-color: #da910b;
+  --secondary-color: crimson;
+  --white-color: #FFFFFF;
+  --blue-color: #1900d3;
+}
+
+*
+{
+  outline: 0;
+  box-sizing: border-box;
+}
+
+html
+{
+  font-size: 62.5%;
+}
+
+body 
+{
+  margin: 0;
+  background: var(--primary-color);
+  font-family: 'Open sans', sans-serif;
+  font-size: 2em;
+  line-height: 1.5em;
+}
+
+h1
+{
+  font-size: 3.4rem;
+  text-align: center;
+  color: var(--darker-primary-color);
+}
+
+.container 
+{
+  max-width: 74rem;
+  margin: 5rem auto;
+  background: #fff;
+  padding: 5rem;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+  border-radius: 1rem;
+}
+
+#header
+{ 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: -1.5rem ;
+}
+
+#header img
+{
+  vertical-align: middle;
+  width: 6rem;
+  height: 6rem;
+  margin: 0;
+}
+
+.white-bg 
+{
+  background: var(--white-color);
+  color: var(--primary-color);
+}
+
+#inputContainer
+{
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+#inputContainer input,
+#inputContainer input:focus
+{
+  vertical-align: middle;
+  background-color: #fff;
+  margin-right: 1rem;
+  padding: 1rem;
+  height: 5rem;
+  font-size: 1.7rem;
+  font-family: 'Open sans', sans-serif;
+  border: 0.2rem solid #ddd;
+  width: 68.4%;
+}
+
+#inputContainer input:focus
+{
+  font-family: 'Open sans', sans-serif;
+  color: var(--darker-primary-color); 
+}
+
+#inputContainer button,
+#inputContainer button:hover
+{
+  background-color: var(--orange-color);
+  color: var(--white-color);
+  height: 5rem;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 1rem;
+  border: 0.2rem solid #ddd;
+  cursor: pointer;
+  width: 30%;
+}
+
+#inputContainer button:hover
+{
+  color: var(--orange-color);
+  background-color: var(--white-color);
+  font-weight: 600;
+  transition: ease-in-out 200ms;
+}
+
+::placeholder
+{
+  font-size: 2rem;
+  color: var(--dark-primary-color);
+  font-weight: 600;
+}
+
+
+ul
+{
+  margin-top: 2rem;
+  list-style-type: square;
+}
+
+.allTasks li
+{
+  font-size: 2rem;
+  color: var(--darker-primary-color);
+  margin-bottom: 3rem;
+}
+
+.allTasks li>button
+{
+  margin-left: 1rem;
+}
+
+button.done
+{
+  
+  background-color: var(--orange-color);
+  color: var(--white-color);
+  font-family: 'Open sans', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 0.5rem;
+  border: 0.2rem solid #ddd;
+  transition: ease-in-out 200ms;
+  cursor: pointer;
+}
+
+button.done:hover
+{
+  background-color: var(--white-color);
+  color: var(--orange-color);
+}
+
+.footer
+  {
+    margin-top: 5rem;
+  }
+
+
+.footer p 
+{
+  color: #000;
+  text-align: center;
+  font-size: 2.1rem;
+  margin: 0;
+  margin-bottom: 3rem;
+  font-weight: 700;
+}
+
+
+.footer a 
+{
+  text-decoration: underline;
+  color: var(--blue-color);
+}
+
+.footer a:hover
+{
+  color: #03bb03;
+}
+
+.footer a:hover
+{
+  color: var(--orange-color);
+  transition: 100ms ease-in-out;
+}
+
+#heartEntity
+{
+    color: var(--secondary-color);
+    font-size: 2.5rem;
+}
+
+@media (min-width: 801px) and (max-width: 900px)
+{
+  .container
+  {
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+
+}
+
+@media (max-width: 800px)
+{
+  body 
+  {
+    font-size: 1.7rem;
+  }
+
+  h1 
+  {
+    font-size: 3.4rem;
+  }
+
+  .container
+  {
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+
+  #header img 
+  {
+    width: 5rem;
+    height: 5rem;
+    margin: 0;
+  }
+
+  #inputContainer
+  {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  #inputContainer input
+  {
+    margin: 1rem 0;
+  }
+
+  #inputContainer input,
+  #inputContainer input:focus,
+  #inputContainer button,
+  #inputContainer button:hover
+  {
+    width: inherit;
+  }
+
+  .footer p 
+  {
+    font-size: 2.4rem;
+  }
+
+  #heartEntity
+  {
+    font-size: 2rem;
+  }
+}
