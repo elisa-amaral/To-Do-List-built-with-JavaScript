@@ -8,7 +8,7 @@
   --orange-color: #da910b;
   --secondary-color: crimson;
   --white-color: #FFFFFF;
-  --blue-color: #1900d3;
+  --blue-color: #1900d3;  
 }
 
 *
@@ -40,10 +40,10 @@ h1
 
 .container 
 {
-  max-width: 74rem;
-  margin: 5rem auto;
+  max-width: 74rem;  
+  margin: 5rem auto; 
   background: #fff;
-  padding: 5rem;
+  padding: 5rem; 
   padding-top: 2rem;
   padding-bottom: 3rem;
   border-radius: 1rem;

@@ -69,6 +69,7 @@ document.addEventListener('click', function(e) {
 function recordTask()
 {
    const listItems = allTasks.querySelectorAll('li')
+   console.log(listItems)
    const tasksList = []
 
    for (let task of listItems)
